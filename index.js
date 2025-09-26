@@ -11,7 +11,7 @@ app.get('/server', (req, res) =>{
     res.send('<a href ="https://amnendratomar.netlify.app"> My website</a>')
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Example app listening on port ${port}`)
 })
 
